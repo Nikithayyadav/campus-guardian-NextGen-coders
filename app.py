@@ -14,9 +14,7 @@ user_role = st.sidebar.selectbox("Role", ["Student", "Admin"])
 
 st.divider()
 
-# =========================
-# SOS SECTION
-# =========================
+# SOS Section
 st.markdown("### 🚨 Emergency SOS")
 
 col1, col2 = st.columns(2)
@@ -44,25 +42,21 @@ if st.button("🚨 SEND SOS", use_container_width=True):
             "time": str(datetime.now())
         }
 
-        # Save to Firebase
         ref.push(data)
 
-        st.success("SOS sent successfully to campus security!")
+        st.success("SOS sent successfully!")
     else:
         st.error("Please fill all fields")
 
 st.divider()
 
-# =========================
-# ADMIN DASHBOARD
-# =========================
+# Admin Panel
 if user_role == "Admin":
     st.markdown("### 🛡️ Live SOS Alerts")
 
     data = ref.get()
 
     if data:
-        rows = list(data.values())
-        st.table(rows)
+        st.table(list(data.values()))
     else:
-        st.info("No SOS alerts yet")
+        st.warning("No SOS alerts found in Firebase yet.")
