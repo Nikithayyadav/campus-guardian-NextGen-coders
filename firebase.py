@@ -12,4 +12,4 @@ firebase_admin.initialize_app(cred, {
     "databaseURL": "https://campus-guardian-1b2e3-default-rtdb.firebaseio.com"
 })
 
-ref = db.reference("sos_alerts")
+ref = db.reference("/sos_alerts")
