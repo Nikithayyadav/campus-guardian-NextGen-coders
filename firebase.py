@@ -9,7 +9,7 @@ cred = credentials.Certificate(
 )
 
 firebase_admin.initialize_app(cred, {
-    "databaseURL": "https://console.firebase.google.com/u/0/project/campus-guardian-1b2e3/database/campus-guardian-1b2e3-default-rtdb/data"
+    "databaseURL": "https://campus-guardian-1b2e3-default-rtdb.firebaseio.com"
 })
 
 ref = db.reference("/sos_alerts")
