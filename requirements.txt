@@ -1,2 +1,6 @@
 streamlit
 firebase-admin
+streamlit-js-eval
+openai
+
+
