@@ -4,12 +4,13 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-cred = credentials.Certificate(
-    os.path.join(BASE_DIR, "firebase_key.json")
-)
+# Load key
+cred = credentials.Certificate(os.path.join(BASE_DIR, "firebase_key.json"))
 
-firebase_admin.initialize_app(cred, {
-    "databaseURL": "https://campus-guardian-1b2e3-default-rtdb.firebaseio.com"
-})
+# Initialize only once (Streamlit-safe)
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred, {
+        "databaseURL": "https://campus-guardian-1b2e3-default-rtdb.firebaseio.com"
+    })
 
 ref = db.reference("/sos_alerts")
