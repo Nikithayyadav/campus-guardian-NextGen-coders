@@ -7,7 +7,7 @@ import pandas as pd
 from streamlit_js_eval import get_geolocation
 
 st.set_page_config(page_title="Campus Guardian", layout="wide")
-
+ 
 st.markdown("## 🚨 Campus Guardian") 
 st.caption("AI-powered campus safety and emergency system")
 
