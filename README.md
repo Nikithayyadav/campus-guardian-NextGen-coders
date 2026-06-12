@@ -2,7 +2,7 @@
 
 Campus Guardian is a real-time, AI-powered campus safety solution that allows students to send emergency SOS alerts with automatic GPS location detection and intelligent response support.
 
----
+--- 
 
 ## 🧠 Problem Statement
 Campus harassment and emergency situations require **instant response**, but:
