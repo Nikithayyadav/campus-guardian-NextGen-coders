@@ -13,4 +13,4 @@ if not firebase_admin._apps:
         "databaseURL": "https://campus-guardian-1b2e3-default-rtdb.firebaseio.com"
     })
 
-ref = db.reference("/sos_alerts")
+ref = db.reference("/sos_alerts") 
