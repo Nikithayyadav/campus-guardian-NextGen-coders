@@ -5,7 +5,7 @@ client = OpenAI(api_key="sk-proj-U8CGvPQ_WXk1Mw6MEZInHf_26EDoF4bsGYGsHkY_cjYHWJA
 
 def analyze(emergency, lat, lng):
     prompt = f"""
-A student sent an emergency SOS.
+A student sent an emergency SOS. 
 
 Type: {emergency}
 Latitude: {lat}
