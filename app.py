@@ -4,7 +4,7 @@ import streamlit as st
 from datetime import datetime
 from firebase import ref
 import pandas as pd 
-from streamlit_js_eval import get_geolocation
+from streamlit_js_eval import get_geolocation 
 
 st.set_page_config(page_title="Campus Guardian", layout="wide")
  
